@@ -1,16 +1,16 @@
-defmodule __EXAMPLE__MODULE__NAME__Web.Endpoint do
-  use Phoenix.Endpoint, otp_app: :__example__app__name__
+defmodule EXAMPLE__MODULE__NAMEWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :example__app__name
 
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
   @session_options [
     store: :cookie,
-    key: "___example__app__name___key",
+    key: "_example__app__name_key",
     signing_salt: "/3pAGBnS"
   ]
 
-  socket "/socket", __EXAMPLE__MODULE__NAME__Web.UserSocket,
+  socket "/socket", EXAMPLE__MODULE__NAMEWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -20,7 +20,7 @@ defmodule __EXAMPLE__MODULE__NAME__Web.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
-    from: :__example__app__name__,
+    from: :example__app__name,
     gzip: true,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
@@ -28,7 +28,7 @@ defmodule __EXAMPLE__MODULE__NAME__Web.Endpoint do
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :__example__app__name__
+    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :example__app__name
   end
 
   plug Plug.RequestId
@@ -42,5 +42,5 @@ defmodule __EXAMPLE__MODULE__NAME__Web.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug __EXAMPLE__MODULE__NAME__Web.Router
+  plug EXAMPLE__MODULE__NAMEWeb.Router
 end

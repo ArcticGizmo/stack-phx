@@ -1,4 +1,4 @@
-defmodule __EXAMPLE__MODULE__NAME__Web.UserChannel do
+defmodule EXAMPLE__MODULE__NAMEWeb.UserChannel do
   @moduledoc false
 
   @room "user:all"

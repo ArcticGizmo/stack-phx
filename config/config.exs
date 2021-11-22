@@ -1,15 +1,15 @@
 use Mix.Config
 
-config :__example__app__name__,
-  namespace: __EXAMPLE__MODULE__NAME__,
-  ecto_repos: [__EXAMPLE__MODULE__NAME__.Repo]
+config :example__app__name,
+  namespace: EXAMPLE__MODULE__NAME,
+  ecto_repos: [EXAMPLE__MODULE__NAME.Repo]
 
 # Configures the endpoint
-config :__example__app__name__, __EXAMPLE__MODULE__NAME__Web.Endpoint,
+config :example__app__name, EXAMPLE__MODULE__NAMEWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "dOk2CGM0B+s2SE1ILmTAHNCa+zHcgDxTgbGm1J5tJSUTbBNJ8jLloCZvmdXy3hbl",
-  render_errors: [view: __EXAMPLE__MODULE__NAME__Web.ErrorView, accepts: ~w(json), layout: false],
-  pubsub_server: __EXAMPLE__MODULE__NAME__.PubSub,
+  render_errors: [view: EXAMPLE__MODULE__NAMEWeb.ErrorView, accepts: ~w(json), layout: false],
+  pubsub_server: EXAMPLE__MODULE__NAME.PubSub,
   live_view: [signing_salt: "QAhKoI4G"]
 
 # Configures Elixir's Logger

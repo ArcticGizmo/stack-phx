@@ -1,4 +1,4 @@
-# __EXAMPLE__MODULE__NAME__
+# EXAMPLE__MODULE__NAME
 
 To start your Phoenix server:
 

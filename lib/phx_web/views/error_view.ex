@@ -1,5 +1,5 @@
-defmodule __EXAMPLE__MODULE__NAME__Web.ErrorView do
-  use __EXAMPLE__MODULE__NAME__Web, :view
+defmodule EXAMPLE__MODULE__NAMEWeb.ErrorView do
+  use EXAMPLE__MODULE__NAMEWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.
